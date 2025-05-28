@@ -7,24 +7,26 @@
 - Кэширование на 15 минут
 
 # Как запустить
-- Скачайте код
+- Скачайте проект:
 ```
 git clone https://github.com/Evgan4ik/weather_project.git
 cd weather_project
 ```
-- Установите зависимости
+- Установите зависимости:
 ```
 pip install -r requirements.txt
 ```
 - Зарегистрируйтесь на сайте `openweathermap.org` и получите токен
+  
 - Создайте в корне файл `.env` c содержимым `OPENWEATHER_API_KEY=ваш_токен`
-- Создайте и примените миграции базы данных
+
+- Создайте и примените миграции базы данных:
 ```
 python manage.py makemigrations
 
 python manage.py migrate
 ```
--Запустите сервер
+-Запустите сервер:
 ```
 python manage.py runserver
 
